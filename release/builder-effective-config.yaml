@@ -1,0 +1,18 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.tapcanvas.acoustic
+productName: TapCanvas Acoustic Interface
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+      - package.json
+mac:
+  category: public.app-category.utilities
+win:
+  target: nsis
+linux:
+  target: AppImage
+  category: Utility
+electronVersion: 45.1.0
